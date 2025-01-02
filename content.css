@@ -1,0 +1,17 @@
+  <nav class="header__navbar">
+                        <ul class="header__navbar-list">
+                            <li class="header__navbar-item header__navbar-item--separate ">
+                                <a href="#" class="header__navbar-title--no-pointer">Cửa hàng sữa cho mẹ bầu và em bé</a>
+                            </li>
+
+                            <li class="header__navbar-item">
+                                <span class="header__navbar-title--no-pointer">Kết nối</span>
+                                <a href="https://www.facebook.com/" class="header__navbar-icon-link">
+                                    <i class="header__navbar-icon fa-brands fa-facebook"></i>
+                                </a>
+                                <a href="https://www.instagram.com/" class="header__navbar-icon-link">
+                                    <i class="header__navbar-icon fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+</nav>
