@@ -55,4 +55,22 @@
                                     Trợ giúp
                                 </a>
                             </li>
-</nav>
+                            <!-- <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăngký</li>
+                            <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li> -->
+                            <li class="header__navbar-item header__navbar-user">
+                                <img src="./assets/img/avatar-anh-meo-cute-3.jpg " alt="" class="header__navbar-user-img">
+                                <span class="header__navbar-user-name">Mèo Méo Meo Mèo Meo</span>
+                                <ul class="header__navbar-user-menu">
+                                    <li class="header__navbar-user-item ">
+                                        <a href="">Tài khoảng của tôi</a>
+                                        <a href="">Địa chỉ của tôi</a>
+                                        <a href="">Đơn mua</a>
+                                        <div class="header__navbar-user-item--separate">
+                                            <a href="">Đăng xuất</a>
+                                        </div>
+                                        
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
