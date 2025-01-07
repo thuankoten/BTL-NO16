@@ -94,3 +94,35 @@
     display: flex;
     align-items: center;
 }
+.header__navbar-item {
+    margin: 0 8px;
+    position: relative;
+    line-height: 20px;
+    min-height: 26px;
+}
+
+.header__navbar-user-menu {
+    position: absolute;
+    z-index: 1;
+    padding-left: 0;
+    top: calc(100% + 4px);
+    right: 0;
+    background-color: var(--white-color);
+    border-radius: 2px;
+    list-style: none;
+    width: 160px;
+    box-shadow: 0 1px 2px #ad9d9d ;
+    display: none;
+}
+
+.header__navbar-user-menu::before {
+    content: "";
+    display: flex;
+    border-width: 20px 30px ;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent ; 
+    position: absolute;
+    right: -1px;
+    top: -26px;
+    z-index: -1;
+}
