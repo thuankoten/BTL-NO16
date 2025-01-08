@@ -34,3 +34,33 @@
     cursor: default;
     z-index: 3;
 }
+.header__cart-notice {
+    position: absolute;
+    padding: 1px 7px;
+    top: -4px;
+    right: -4px;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    line-height: 1.4rem;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    border: 2px solid #692ec7;
+}
+
+.header__cart-heading {
+    text-align: left;
+    margin: 8px 0 8px 12px;
+    font-size: 1.4rem;
+    color: #999;
+    font-weight: 400;
+}
+
+.header__cart-list-item {
+    padding-left: 0;
+    list-style: none;
+    overflow-y: auto;
+    height: 40vh;
+}
+
+.header__cart-item {
+
