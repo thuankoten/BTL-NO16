@@ -92,5 +92,34 @@
 
 .header__cart-item-name {
     flex: 1;
+    padding-right: 16px;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    max-height: 4rem;
+    overflow: hidden;
+    font-weight: 500;
+    color: var(--text-color);
+    margin: 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 1;
+    text-align: left;
+}
+
+.header__cart-view-cart {
+    float: right;
+    margin: 0 12px 12px 0;
+}
+
+.header__cart-view-cart:hover {
+    background-color: #9F79EE;
+}
+
+.header__cart-item-price-wrap{
+
+}
+
+.header__cart-item-price {
 
 
