@@ -16,3 +16,8 @@
     min-width: 90px;
     margin-right: 12px;
 }
+home-filter__page {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
