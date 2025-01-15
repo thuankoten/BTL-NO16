@@ -21,3 +21,9 @@ home-filter__page {
     align-items: center;
     margin-left: auto;
 }
+
+.home-filter__page-num {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-right: 22px;
+}
