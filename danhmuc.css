@@ -27,3 +27,14 @@ home-filter__page {
     color: var(--text-color);
     margin-right: 22px;
 }
+home-filter__page-num-current {
+    color: var(--primary-color);
+}
+
+.home-filter__page-control {
+    border-radius: 2px;
+    overflow: hidden;
+    display: flex;
+    width: 72px;
+    height: 36px;
+}
