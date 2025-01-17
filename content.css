@@ -107,3 +107,34 @@
 .header__navbar-user-item a:hover {
     background-color: #fafafa;
 }
+/* LOGO */
+.header__navbar-logo{
+    width: 130px;
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+
+.header__navbar-icon {
+    font-size: 1.8rem;
+    margin: 0 4px;
+}
+
+.header__navbar-icon-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header__navbar-icon-link:nth-child(2) {
+    margin-left: 3px;
+}
+
+.header__navbar-item, 
+.header__navbar-item-link {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: 300;
+    
+}
