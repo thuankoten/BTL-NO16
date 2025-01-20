@@ -138,3 +138,32 @@
     font-weight: 300;
     
 }
+.header__navbar-item, 
+.header__navbar-item-link,
+.header__navbar-icon-link {
+    display: inline-flex;
+    align-items : center;
+    
+}   
+
+.header__navbar-item:hover,
+.header__navbar-icon-link:hover, 
+.header__navbar-item-link:hover {
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+
+.header__navbar-item--strong {
+    font-weight: 600; 
+}
+.header__navbar-item--separate::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 16px;
+/* Cách làm dấu gạch ngang cách 1 */
+    /* background-color: #fff;
+    width: 1px;
+    top: 50%;
+    right: -9px;
+    transform: translateY(-50%); */
