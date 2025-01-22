@@ -54,3 +54,11 @@ home-filter__page-num-current {
     font-size: 1.4rem;
     color: #555;
 }
+.home-filter__page-btn--disabled {
+    cursor: default;
+    background-color: #f9f9f9;
+}
+
+.home-filter__page-btn--disabled .home-filter__page-icon {
+    color: #ccc;
+}
