@@ -167,3 +167,15 @@
     top: 50%;
     right: -9px;
     transform: translateY(-50%); */
+/*  Cách 2 */
+    border-left: 1px solid #fbfbfb;
+    top: 50%;
+    right: -9px;
+    transform: translateY(-50%);
+}
+
+.header__navbar-title--no-pointer {
+    cursor: text;
+    color: var(--white-color);
+    text-decoration: none;
+}
