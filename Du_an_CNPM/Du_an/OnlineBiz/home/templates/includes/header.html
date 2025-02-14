@@ -1,0 +1,242 @@
+{% load static %}
+<header class="header">
+    <div class="grid wide">
+        <nav class="header__navbar hide-on-mobile-tablet">
+            <ul class="header__navbar-list">
+                <li class="header__navbar-item header__navbar-item--separate ">
+                    <a href="#" class="header__navbar-title--no-pointer">Cửa hàng sữa cho mẹ bầu và em bé</a>
+                </li>
+
+                <li class="header__navbar-item">
+                    <span class="header__navbar-title--no-pointer">Kết nối</span>
+                    <a href="https://www.facebook.com/" class="header__navbar-icon-link">
+                        <i class="header__navbar-icon fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" class="header__navbar-icon-link">
+                        <i class="header__navbar-icon fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="header__navbar-list">
+                <li class="header__navbar-item header__navbar-item--has-notify">
+                    <a href="" class="header__navbar-item-link">
+                        <i class="header__navbar-icon fa-regular fa-bell"></i>
+                        Thông báo
+                    </a>
+                    <div class="header__notify">
+                        <header class="header__notify-header ">
+                            <h3>Thông báo mới nhận</h3>
+                        </header>
+                        <ul class="header__notify-list">
+                            <li class="header__notify-item header__notify-item--viewed">
+                                <a href="#" class="header__notify-link">
+                                    <img src="{%static 'home/assets/img/voucher.jpg'%}" alt="SP" class="header__notify-img">
+                                    <div class="header__notify-info">
+                                        <span class="header__notify-name">Sữa chính hãng</span>
+                                        <span class="header__notify-description">Mô tả sữa chính hãng</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="header__notify-item header__notify-item--viewed">
+                                <a href="#" class="header__notify-link">
+                                    <img src="{%static 'home/assets/img/voucher.jpg'%}" alt="SP" class="header__notify-img">
+                                    <div class="header__notify-info">
+                                        <span class="header__notify-name">Sữa chính hãng</span>
+                                        <span class="header__notify-description">Mô tả sữa chính hãng</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="header__notify-item header__notify-item--viewed">
+                                <a href="#" class="header__notify-link">
+                                    <img src="{%static 'home/assets/img/voucher.jpg'%}" alt="SP" class="header__notify-img">
+                                    <div class="header__notify-info">
+                                        <span class="header__notify-name">Sữa chính hãng</span>
+                                        <span class="header__notify-description">Mô tả sữa chính hãng</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <footer class="header__notify-footer">
+                            <a href="" class="header__notify-footer-btn">Xem tất cả</a>
+                        </footer>
+                    </div>
+                </li>
+                <li class="header__navbar-item">
+                    <a href="help/index.html" class="header__navbar-item-link">
+                        <i class="header__navbar-icon fa-regular fa-circle-question"></i>
+                        Trợ giúp
+                    </a>
+                </li>
+                <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">
+                    <a href="register.html" class="header__navbar-item-link">Đăng ký</a>
+                </li>
+                <li class="header__navbar-item header__navbar-item--strong">
+                    <a href="login.html" class="header__navbar-item-link">Đăng nhập</a>
+                </li>
+                <!-- <li class="header__navbar-item header__navbar-user">
+                    <img src="{%static 'home/assets/img/avatar-anh-meo-cute-3.jpg'%} " alt="" class="header__navbar-user-img">
+                    <span class="header__navbar-user-name">Mèo Méo Meo Mèo Meo</span>
+                    <ul class="header__navbar-user-menu">
+                        <li class="header__navbar-user-item ">
+                            <a href="">Tài khoảng của tôi</a>
+                            <a href="">Địa chỉ của tôi</a>
+                            <a href="">Đơn mua</a>
+                            <div class="header__navbar-user-item--separate">
+                                <a href="">Đăng xuất</a>
+                            </div>
+                            
+                        </li>
+                    </ul>
+                </li> -->
+            </ul>
+        </nav>
+        
+        <!-- header with search -->
+        <div class="header-with-search">    
+            <label for="mobile-search-checkbox" class="header__mobile-search">
+                <i class="header__mobile-search-icon fa-solid fa-magnifying-glass"></i>
+            </label>
+
+            <div class="header__logo hide-on-tablet">
+                <a href="/" class="header__logo-link">
+                    <img src="{%static 'home/assets/img/Remove-bg.ai_1735560474175.png'%}" alt="LOGO_store" class="header__logo-img">
+                </a>
+            </div>
+
+            <input type="checkbox" hidden id="mobile-search-checkbox" class="header__search-checkbox">
+
+            <div class="header__search ">
+                <div class="header__search-input-warp">
+                    <input type="text" class="header__search-input" placeholder="Tìm sản phẩm, nhóm hàng, hãng...">
+                    <!-- Search history -->
+                    <div class="header__search-history">
+                        <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                        <ul class="header__search-history-list">
+                            <li class="header__search-history-item">
+                                <a href="">Sữa xịn</a>
+                            </li>
+                            <li class="header__search-history-item">
+                                <a href="">Sữa +</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header__search-select">
+                    <span class="header__search-select-label">Trong shop</span>
+                    <i class="header__search-select-icon fa-solid fa-angle-down"></i>
+
+                    <ul class="header__search-option">
+                        <li class="header__search-option-item header__search-option-item--active">
+                            <span>Trong shop</span>
+                            <i class="fa-solid fa-check"></i>
+                        </li>
+                        <li class="header__search-option-item">
+                            <span>Ngoài shop</span>
+                            <i class="fa-solid fa-check"></i>
+                        </li>
+                    </ul>
+                </div>
+                <button class="header__search-btn">
+                    <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+
+            <!-- Cart layout  -->
+            <div class="header__cart">
+                <div class="header__cart-wrap">
+                    <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                    <span class="header__cart-notice">3</span>
+                    
+                    <!-- No cart: header__cart--list--no-cart -->
+                    <div class="header__cart--list">
+                        <img src="{%static 'home/assets/img/cart-empty.png'%}" alt="" class="header__cart--list--no-img">
+                        <span class="header__cart--list--no-cart-msg">Chưa có sản phẩm</span>
+                        <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                        <ul class="header__cart-list-item">
+                            <!-- Cart item -->
+                            <li class="header__cart-item">
+                                <img src="{%static 'home/assets/img/sua-bot-enfagrow-a-neuropro-4-vi-nhat-de-uong-830g-030423-103550-300x300.jpg'%}" alt="" class="header__cart-img">
+                                <div class="header__cart-item-info">
+                                    <div class="header__cart-item-head">
+                                        <h5 class="header__cart-item-name">Sữa bột Enfagrow A+ Neuropro</h5>
+                                        <div class="header__cart-item-price-wrap">
+                                            <span class="header__cart-item-price">1.020.000đ</span>
+                                            <span class="header__cart-item-multiply">x</span>
+                                            <span class="header__cart-item-quatity">2</span>
+                                        </div>
+                                    </div>
+                                    <div class="header__cart-item-body">
+                                        <span class="header__cart-item-description">
+                                            Phân loại: 830g
+                                        </span>
+                                        <spam class="header__cart-item-remove">Xóa</spam>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="header__cart-item">
+                                <img src="{%static 'home/assets/img/sua-bot-nutifood-grow-plus-lon-900g-1-2-tuoi-150824-054832-300x300.jpg'%}" alt="" class="header__cart-img">
+                                <div class="header__cart-item-info">
+                                    <div class="header__cart-item-head">
+                                        <h5 class="header__cart-item-name">Sữa bột Nutifood GrowPLUS +</h5>
+                                        <div class="header__cart-item-price-wrap">
+                                            <span class="header__cart-item-price">1.120.000đ</span>
+                                            <span class="header__cart-item-multiply">x</span>
+                                            <span class="header__cart-item-quatity">2</span>
+                                        </div>
+                                    </div>
+                                    <div class="header__cart-item-body">
+                                        <span class="header__cart-item-description">
+                                            Phân loại: 800g
+                                        </span>
+                                        <spam class="header__cart-item-remove">Xóa</spam>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="header__cart-item">
+                                <img src="{%static 'home/assets/img/spdd-cong-thuc-growplus-colos-immunel-1-lon-800g-thumb-300x300.jpg'%}" alt="" class="header__cart-img">
+                                <div class="header__cart-item-info">
+                                    <div class="header__cart-item-head">
+                                        <h5 class="header__cart-item-name">Sữa bột Nutifood GrowPLUS+ Colos</h5>
+                                        <div class="header__cart-item-price-wrap">
+                                            <span class="header__cart-item-price">620.000đ</span>
+                                            <span class="header__cart-item-multiply">x</span>
+                                            <span class="header__cart-item-quatity">2</span>
+                                        </div>
+                                    </div>
+                                    <div class="header__cart-item-body">
+                                        <span class="header__cart-item-description">
+                                            Phân loại: 830g
+                                        </span>
+                                        <spam class="header__cart-item-remove">Xóa</spam>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <a href="" class="header__cart-view-cart btn btn--primary">Xem Giỏ Hàng</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <ul class="header__sort-bar">
+        <li class="header__sort-item">
+            <a href="" class="header__sort-link">Liên quan</a>
+        </li>
+        <li class="header__sort-item header__sort-item--active">
+            <a href="" class="header__sort-link">Mới nhất</a>
+        </li>
+        <li class="header__sort-item">
+            <a href="" class="header__sort-link">Bán chạy</a>
+        </li>
+        <li class="header__sort-item">
+            <a href="" class="header__sort-link">Giá</a>
+        </li>
+    </ul>
+</header>

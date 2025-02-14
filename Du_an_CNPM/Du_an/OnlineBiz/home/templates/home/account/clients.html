@@ -1,0 +1,87 @@
+{% extends "master.html" %}
+
+{% block header %}
+    {% include '../../includes/header.html' %}
+{% endblock header %}
+
+
+{% block home-product %}
+    <!--CONTENT-->
+    <div class="content">
+    	<span class="ketquatimkiem">Tìm thấy 200 kết quả.</span>
+        
+    	<!--TIM KIEM-->
+    	<form class="timkiem" name="frmTimKiem" id="frmTimKiem" method="post">
+        	<input type="search" class="txt" name="txtSearch" id="txtSearch" placeholder="Nhập từ khoá cần tìm" style="width: 250px;" />
+        </form><!--END TIM KIEM-->
+    	
+        <!--DANH SACH-->
+        <div class="danhsach">
+        	<ul class="danhsach-header">
+                <li style="width:60px;">ID</li>
+                <li style="width:250px;">Họ tên</li>
+                <li style="width:80px;">Giới tính</li>
+                <li style="width:250px;">Email</li>
+                <li style="width:130px;">Ngày sinh</li>
+                <li style="width:80px; text-align:center;">Trạng thái</li>
+                <li style="width:100px; float:right; text-align:right;">
+                	<a href="client-add.html" name="btnThemKhachHang" id="btnThemKhachHang" title="Thêm khách hàng mới">+ Thêm mới</a>
+                </li>
+            </ul>
+            <div class="danhsach-chitiet">                
+                <ul class="danhsach-item">
+                    <li style="width:60px;">1</li>
+                    <li style="width:250px;">Dương Diệu Pháp</li>
+                    <li style="width:80px;">Nam</li>
+                    <li style="width:250px;">d2phap@gmail.com</li>
+                    <li style="width:130px;">26/07/1991</li>
+                    <li style="width:80px; text-align:center;">
+                        <img class="imgTrangThai" name="imgTrangThai1" id="imgTrangThai1" src="{%static 'home/assets/img/images/check.png'%}" alt="" width="16" height="16" data-code="1" title="Kích hoạt" />
+                    </li>
+                    <li style="width:100px; float:right; text-align:right;">
+                        <a class="lnkSua" name="btnSua1" id="btnSua1" data-id="1" data-trangthai="0" title="Sửa tài khoản" href="client-add.html">Sửa</a>
+                        <a class="lnkXoa" name="btnXoa1" id="btnXoa1" data-id="1" title="Xoá tài khoản">Xoá</a>
+                    </li>
+                </ul>
+                <ul class="danhsach-item">
+                    <li style="width:60px;">2</li>
+                    <li style="width:250px;">Nguyễn Quốc Tuấn</li>
+                    <li style="width:80px;">Nam</li>
+                    <li style="width:250px;">nqtuan164@gmail.com</li>
+                    <li style="width:130px;">21/12/1991</li>
+                    <li style="width:80px; text-align:center;">
+                        <img class="imgTrangThai" name="imgTrangThai1" id="imgTrangThai1" src="{%static 'home/assets/img/images/check.png'%}" alt="" width="16" height="16" data-code="1" title="Kích hoạt" />
+                    </li>
+                    <li style="width:100px; float:right; text-align:right;">
+                        <a class="lnkSua" name="btnSua2" id="btnSua2" data-id="2" data-trangthai="0" title="Sửa tài khoản" href="client-add.html">Sửa</a>
+                        <a class="lnkXoa" name="btnXoa2" id="btnXoa2" data-id="2" title="Xoá tài khoản">Xoá</a>
+                    </li>
+                </ul>
+                <ul class="danhsach-item">
+                    <li style="width:60px;">3</li>
+                    <li style="width:250px;">Bùi Bá Lộc</li>
+                    <li style="width:80px;">Nam</li>
+                    <li style="width:250px;">bocbalui@gmail.com</li>
+                    <li style="width:130px;">21/01/1991</li>
+                    <li style="width:80px; text-align:center;">
+                        <img class="imgTrangThai" name="imgTrangThai1" id="imgTrangThai1" src="{%static 'home/assets/img/images/check.png'%}" alt="" width="16" height="16" data-code="1" title="Kích hoạt" />
+                    </li>
+                    <li style="width:100px; float:right; text-align:right;">
+                        <a class="lnkSua" name="btnSua3" id="btnSua3" data-id="3" data-trangthai="0" title="Sửa tài khoản" href="client-add.html">Sửa</a>
+                        <a class="lnkXoa" name="btnXoa3" id="btnXoa3" data-id="3" title="Xoá tài khoản">Xoá</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div><!--END DANH SACH-->
+        <div class="danhsach-navigation">
+            <a name="btnThemDanhMuc" id="btnThemDanhMuc">< Trang cũ</a>
+            <label id="lblTrang">1/4 trang</label>
+            <a name="btnThemDanhMuc" id="btnThemDanhMuc">Trang kế ></a>
+        </div>
+    </div><!--END CONTENT-->
+{% endblock %}
+
+{% block footer %}
+    {% include '../../includes/footer.html' %}
+{% endblock footer %}

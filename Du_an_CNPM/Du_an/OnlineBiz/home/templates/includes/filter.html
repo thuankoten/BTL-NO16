@@ -1,0 +1,37 @@
+{% load static %}
+<div class="home-filter hide-on-mobile-tablet">
+    <span class="home-filter__label">Sắp xếp theo</span>
+    <button class="home-filter__btn btn">Phổ biến</button>
+    <button class="home-filter__btn btn btn--primary">Mới nhất</button>
+    <button class="home-filter__btn btn">Bán chạy</button>
+
+    <div class="select-input">
+        <span class="select-input__label">Giá</span>
+        <i class="select-input__icon fa-solid fa-angle-down"></i>
+        <!-- List options -->
+        <ul class="select-input__list">
+            <li class="select-input__item">
+                <a href="" class="select-input__link">Giá: Thấp đến cao</a>
+            </li>
+            <li class="select-input__item">
+                <a href="" class="select-input__link">Giá: cao đến thấp</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="home-filter__page">
+        <span class="home-filter__page-num">
+            <span class="home-filter__page-num-current">1</span>/2
+            
+        </span>
+
+        <div class="home-filter__page-control">
+            <a href="" class="home-filter__page-btn home-filter__page-btn--disabled">
+                <i class="home-filter__page-icon fa-solid fa-angle-left"></i>
+            </a>
+            <a href="" class="home-filter__page-btn">
+                <i class="home-filter__page-icon fa-solid fa-angle-right"></i>
+            </a> 
+        </div>
+    </div>
+</div>

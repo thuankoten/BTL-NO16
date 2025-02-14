@@ -1,0 +1,35 @@
+{% extends "master.html" %}
+
+{% block header %}
+    {% include '../../includes/header.html' %}
+{% endblock header %}
+
+{% block home-product %}
+        <!--CONTENT-->
+        <div class="content">
+            <p class="content-title">Thêm sản phẩm mới</p>
+            <form name="frmThemDanhMucMoi" id="frmThemDanhMucMoi" method="post" action="#">
+                Tên sản phẩm:<br/>
+                <input type="text" class="txt" name="txtTenDanhMuc" id="txtTenDanhMuc" required style="width:300px;" /><br/><br/>
+                Danh mục:<br/>
+                <select class="txt" name="cmbDanhMuc" id="cmbDanhMuc" style="width:320px;">
+                    <option value="1"></option>
+                    <option value="2">SỮA BỘT DINH DƯỠNG NOBIKO</option>
+                    <option value="3">SỮA BỘT DINH DƯỠNG NHẬT BẢN</option>
+                    <option value="4">SỮA BỘT DINH DƯỠNG ABBOTT</option>
+                </select>
+                <br/><br/>
+                Hình ảnh:<br/>
+                <input type="url" class="txt" name="txtTenDanhMuc" id="txtTenDanhMuc" style="width:300px;" /><br/><br/>
+                Số lượng:<br/>
+                <input type="number" min="1" max="99999" class="txt" name="txtTenDanhMuc" id="txtTenDanhMuc" required style="width:300px;" /><br/><br/>
+                Đơn giá:<br/>
+                <input type="number" min="1" max="100000000" class="txt" name="txtTenDanhMuc" id="txtTenDanhMuc" required style="width:300px;" /><br/><br/>
+                <input type="submit" class="btn" name="btnThemDanhMuc" id="btnThemDanhMuc" value="Thêm" />
+            </form>
+        </div><!--END CONTENT-->
+{% endblock %}
+
+{% block footer %}
+    {% include '../../includes/footer.html' %}
+{% endblock footer %}
