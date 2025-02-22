@@ -1,0 +1,65 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="{%static 'home/assets/css/base.css'%}">
+        <link rel="stylesheet" href="{%static 'home/assets/js/effect.js'%}">
+        <link rel="stylesheet" href="{%static 'home/assets/js/danhmuc.js'%}">
+        <link rel="stylesheet" href="{%static 'home/assets/js/donhang.js'%}">
+        <link rel="stylesheet" href="{%static 'home/assets/js/jquery_min.js'%}">
+        <link rel="stylesheet" href="{%static 'home/assets/js/jquery.min.js'%}">
+        <link rel="stylesheet" href="{%static 'home/assets/js/khachhang.js'%}">
+        <link rel="stylesheet" href="{%static 'home/assets/js/nguoidung.js'%}">
+        <link rel="stylesheet" href="{%static 'home/assets/js/sanpham.js'%}">
+        <link rel="stylesheet" href="{%static 'home/assets/css/main.css'%}">
+        <link rel="stylesheet" href="{%static 'home/assets/css/element.css'%}">
+        <link rel="stylesheet" href="{%static 'home/assets/css/product-edit.css'%}">
+        <link rel="stylesheet" href="{%static 'home/assets/css/grid.css'%}">
+        <link rel="stylesheet" href="{%static 'home/assets/css/responsive.css'%}">
+        <link rel="stylesheet" href="{%static 'home/assets/reset_css/normalize.min.css.map'%}">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300    ;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet"
+            href="{%static 'home/assets/fonts_icon/fontawesome-free-6.7.1-web/fontawesome-free-6.7.1-web/css/all.css  '%}">
+
+    </head>
+
+    <body>
+        <div class="app">
+            {% block header %}
+            {% endblock %}
+
+            <div class="app__container">
+                <div class="grid wide">
+                    <div class="row sm-gutter app__content">
+                        {% block category %}
+                        {% endblock %}
+    
+                        <div class="col l-10 m-12 c-12">
+                            {% block filter %}
+                            {% endblock %}
+
+                            {% block mobile-category %}
+                            {% endblock %}
+
+                            {% block home-product %}
+                            {% endblock %}
+
+                            {% block pagination %}
+                            {% endblock %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {% block footer %}
+            {% endblock %}
+        </div>
+    </body>
+</html>
+
